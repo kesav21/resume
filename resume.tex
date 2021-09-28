@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.6.2, 28 Aug 2021) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{kPurple}{HTML}{3E0097} % #3E0097
+\definecolor{kGrey}{HTML}{2E2E2E} % #2E2E2E
+\definecolor{kBlack}{HTML}{000000} % #000000
+\colorlet{tagline}{kPurple}
+\colorlet{heading}{kPurple}
+\colorlet{headingrule}{kPurple}
+\colorlet{accent}{kPurple}
+\colorlet{emphasis}{kGrey}
+\colorlet{body}{kBlack}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Kesav Kadalazhi}
+\tagline{Cloud Adoption Engineer, Public Cloud Adoption Team}
+\photoR{2.5cm}{kesav}
+\personalinfo{
+  \email{kkadalazhi2@gmail.com}
+  \phone{(602) 515-6461}
+  \location{Chandler, AZ}
+  \linkedin{kesav21}
+  \github{kesav21}
+}
+
+\makecvheader
+
+\medskip
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Accreditation}
+
+\cvevent{Cloud Practitioner}{Amazon Web Services}{Aug 2019 -- Aug 2022}{Scottsdale, AZ}
+
+\medskip
+
+\cvsection{Experience}
+
+\cvevent{Software Developer}{State Farm, Public Cloud Adoption Team}{July 2021 -- Ongoing}{Tempe, AZ}
+
+\begin{itemize}
+\item Key member of a Cloud Center of Excellence that is responsible for laying down architecture patterns, best practices, implementation guides, and templates.
+\item Improving our security posture by building an AWS Route53 Resolver DNS Firewall to block access to malicious domains across all of State Farm's AWS accounts.
+\end{itemize}
+
+\divider
+
+\cvevent{Public Cloud Intern}{State Farm, Public Cloud Adoption Team}{May 2020 -- May 2021}{Tempe, AZ}
+
+\begin{itemize}
+\item As a member of a Cloud Center of Excellence, I developed a migration plan to move our GitLab CI/CD Runners to AWS EC2.
+\item Deployed CI/CD pipeline runners on AWS EC2 Spot Instances using an Infrastructure-as-Code tool, HashiCorp Terraform.
+\item Securely authenticated pipelines against AWS IAM roles using a dynamic secrets manager, HashiCorp Vault.
+\item Tested our account creation terraform modules using an automated testing library, Terratest.
+\end{itemize}
+
+\divider
+
+\cvevent{Information Security Intern}{Orion Health}{Aug 2017 -- Aug 2018}{Scottsdale, AZ}
+
+\begin{itemize}
+\item I developed a system to audit access to production and development environments.
+\item Built an event-driven system to monitor incoming/outgoing traffic from AWS VMs using AWS Lambda functions.
+\item Automated deployment through a Continuous Delivery model using AWS CloudFormation.
+\item Selected for the Open, Trusted, and Courageous Award; youngest member and first intern to receive this award.
+\end{itemize}
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Life Philosophy}
+\begin{quote}
+``Solving problems by leveraging cutting-edge technologies.''
+\end{quote}
+
+\cvsection{Most Proud of}
+% \cvachievement{\faTrophy}{Dedication}{to study for and pass an AWS certification before starting my second year of college.}
+% \cvachievement{\faHeartbeat}{Persistence}{to graduate summa cum laude in three years + working as an intern during the full school year + building expertise in AWS API Gateway and Lambda.}
+
+% \cvachievement{\faTrophy}{Dedication}{}
+\cvachievement{\faHeartbeat}{Persistence}{
+	to study for and pass an AWS certification before my second year
+	+ working as an intern during the summer and the entire third year
+	+ building expertise in AWS API Gateway and Lambda
+	+ graduate summa cum laude in three years
+}
+
+% \cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
+% \divider
+% \divider
+% \cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
+% \divider
+% \cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+
+\medskip
+
+\cvsection{Strengths}
+
+% \cvtag{Hard-working}
+% \cvtag{Dedicated}
+% \cvtag{Passionate}
+
+% \divider\smallskip
+
+\cvtag{Continuous Delivery}
+\cvtag{AWS}
+\cvtag{DevOps}
+\cvtag{Information Security}
+\cvtag{Agile}
+\cvtag{UI/UX}
+\cvtag{Infrastructure-as-Code}
+
+\divider\smallskip
+
+\cvtag{Git}
+\cvtag{Terraform}
+\cvtag{Vault}
+\cvtag{Docker}
+
+\cvtag{React}
+\cvtag{Angular}
+
+\cvsection{Languages}
+
+\cvskill{JavaScript}{5}
+\cvskill{Python}{5}
+\cvskill{Ruby}{4}
+\cvskill{Java}{4}
+\cvskill{C/C++}{3}
+\cvskill{Bash}{3}
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{B.Sc.\ in Computer Science}{Arizona State University}{Aug 2018 -- May 2021}{}
+
+\begin{itemize}
+\item As my capstone project, I built a cloud-native solution to remotely monitor, diagnose, and resolve network issues in a consumer's home.
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
