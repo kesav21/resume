@@ -59,7 +59,7 @@
 
 \begin{document}
 \name{Kesav Kadalazhi}
-\tagline{Cloud Adoption Engineer, Public Cloud Adoption Team}
+\tagline{Senior Software Engineer at FlipX}
 \photoR{2.5cm}{kesav}
 \personalinfo{
   \email{kkadalazhi2@gmail.com}
@@ -77,19 +77,29 @@
 
 \begin{paracol}{2}
 
-\cvsection{Accreditation}
-
-\cvevent{Cloud Practitioner}{Amazon Web Services}{Aug 2019 -- Aug 2022}{Scottsdale, AZ}
-
-\medskip
-
 \cvsection{Experience}
 
-\cvevent{Software Developer}{State Farm, Public Cloud Adoption Team}{July 2021 -- Ongoing}{Tempe, AZ}
+\cvevent{Senior Software Engineer}{FlipX}{Apr 2022 -- Ongoing}{Tempe, AZ}
 
 \begin{itemize}
-\item Key member of a Cloud Center of Excellence that is responsible for laying down architecture patterns, best practices, implementation guides, and templates.
-\item Improving our security posture by building an AWS Route53 Resolver DNS Firewall to block access to malicious domains across all of State Farm's AWS accounts.
+\item Co-authored FlipX's serverless API platform powered by API Gateway, AWS Lambda and Go.
+\item Architected and developed the overall observability strategy for FlipX using OpenTelemetry, Docker, and AWS X-Ray.
+\item Deployed and maintained AWS infrastructure by leveraging Infrastructure-as-Code with Terraform and Terraform Cloud.
+\item Created and maintained CI/CD pipelines with GitHub Actions to deploy infrastructure as well as the application logic.
+\item Authored RFCs that proposed new features and strategy changes for the overall FlipX architecture and application logic.
+\item Authored and optimized SQL queries for Postgres databases on Amazon RDS through Go.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Developer}{State Farm, Public Cloud Adoption Team}{July 2021 -- Apr 2022}{Tempe, AZ}
+
+\begin{itemize}
+\item Authored architecture patterns, implementation guides, and templates which were consumed by downstream engineering teams.
+\item Built an AWS Route53 Resolver DNS Firewall to block access to malicious domains across all of State Farm's AWS accounts.
+\item Authored and maintained Terraform modules critical to supporting the State Farm cloud platform, tested using Terratest and Go.
+\item Answered technical questions from internal stakeholders on topics such as Terraform, Go, AWS, and best practices for authoring and deploying cloud native applications.
+% \item Conducted ad-hoc research for Architecture Managers to determine viability of technical ideas and prototypes.
 \end{itemize}
 
 \divider
@@ -97,10 +107,10 @@
 \cvevent{Public Cloud Intern}{State Farm, Public Cloud Adoption Team}{May 2020 -- May 2021}{Tempe, AZ}
 
 \begin{itemize}
-\item As a member of a Cloud Center of Excellence, I developed a migration plan to move our GitLab CI/CD Runners to AWS EC2.
+\item Developed a migration plan to move State Farm's GitLab CI/CD Runners to AWS EC2.
 \item Deployed CI/CD pipeline runners on AWS EC2 Spot Instances using an Infrastructure-as-Code tool, HashiCorp Terraform.
-\item Securely authenticated pipelines against AWS IAM roles using a dynamic secrets manager, HashiCorp Vault.
-\item Tested our account creation terraform modules using an automated testing library, Terratest.
+% \item Securely authenticated pipelines against AWS IAM roles using a dynamic secrets manager, HashiCorp Vault.
+% \item Tested State Farm's AWS account creation modules using an automated Infrastructure-as-Code testing library, Terratest.
 \end{itemize}
 
 \divider
@@ -108,49 +118,30 @@
 \cvevent{Information Security Intern}{Orion Health}{Aug 2017 -- Aug 2018}{Scottsdale, AZ}
 
 \begin{itemize}
-\item I developed a system to audit access to production and development environments.
-\item Built an event-driven system to monitor incoming/outgoing traffic from AWS VMs using AWS Lambda functions.
-\item Automated deployment through a Continuous Delivery model using AWS CloudFormation.
-\item Selected for the Open, Trusted, and Courageous Award; youngest member and first intern to receive this award.
+% \item Developed a system to audit access to production and development environments.
+\item Built an event-driven system to monitor incoming/outgoing traffic from AWS EC2 instances using AWS Lambda Functions.
+\item Automated deployment of infrastructure through a Continuous Delivery model using AWS CloudFormation.
 \end{itemize}
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{Life Philosophy}
+\cvsection{Philosophy}
 \begin{quote}
 ``Solving problems by leveraging cutting-edge technologies.''
 \end{quote}
 
 \cvsection{Most Proud of}
-% \cvachievement{\faTrophy}{Dedication}{to study for and pass an AWS certification before starting my second year of college.}
-% \cvachievement{\faHeartbeat}{Persistence}{to graduate summa cum laude in three years + working as an intern during the full school year + building expertise in AWS API Gateway and Lambda.}
-
-% \cvachievement{\faTrophy}{Dedication}{}
 \cvachievement{\faHeartbeat}{Persistence}{
-	to study for and pass an AWS certification before my second year
-	+ working as an intern during the summer and the entire third year
-	+ building expertise in AWS API Gateway and Lambda
-	+ graduate summa cum laude in three years
-}
+	Passing an AWS certification before my second year
 
-% \cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
-% \divider
-% \divider
-% \cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
-% \divider
-% \cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+	Graduating summa cum laude in three years
+}
 
 \medskip
 
 \cvsection{Strengths}
-
-% \cvtag{Hard-working}
-% \cvtag{Dedicated}
-% \cvtag{Passionate}
-
-% \divider\smallskip
 
 \cvtag{Continuous Delivery}
 \cvtag{AWS}
@@ -172,12 +163,12 @@
 
 \cvsection{Languages}
 
-\cvskill{JavaScript}{5}
+\cvskill{Go}{5}
 \cvskill{Python}{5}
-\cvskill{Ruby}{4}
-\cvskill{Java}{4}
+\cvskill{Bash}{4}
+\cvskill{JavaScript}{4}
+\cvskill{Java}{3}
 \cvskill{C/C++}{3}
-\cvskill{Bash}{3}
 
 \medskip
 
@@ -188,6 +179,10 @@
 \begin{itemize}
 \item As my capstone project, I built a cloud-native solution to remotely monitor, diagnose, and resolve network issues in a consumer's home.
 \end{itemize}
+
+\cvsection{Accreditation}
+
+\cvevent{Cloud Practitioner}{Amazon Web Services}{Aug 2019}{Scottsdale, AZ}
 
 \end{paracol}
 
